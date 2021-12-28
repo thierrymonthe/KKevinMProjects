@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*
-Theme Name: VIMA - Charity E-commerce HTML5 Template.
+Theme Name: Kahef - Charity E-commerce HTML5 Template.
 
 %%%%%%% Table of CSS %%%%%%%
 
@@ -141,7 +141,7 @@ label {
 .image-fit {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	object-position: center;
 }
 [class^="flaticon-"]:before,
@@ -1174,7 +1174,9 @@ span.type-tag {
 /* Top-Navigation */
 
 .top-header {
-	background: #4c283c;
+	/*  background: #4c283c;*/
+	background: #89f700;
+
 }
 .top-left {
 	float: left;
@@ -1182,7 +1184,7 @@ span.type-tag {
 .top-left .top-info li {
 	float: left;
 	list-style: none;
-	color: #231b0a;
+	color: #ffffff;
 	font-size: 14px;
 	font-weight: 500;
 	margin-right: 15px;
@@ -1213,7 +1215,7 @@ span.type-tag {
 }
 .top-right ul li a,
 .top-info li a {
-	color: #e2cdbf;
+	color: #ffffff;
 }
 .top-right .top-btn {
 	margin-left: 15px;
@@ -1222,7 +1224,7 @@ span.type-tag {
 	float: right;
 	color: #ffffff;
 	padding: 10px 19px 12px 19px;
-	background-color: rgba(0, 0, 0, 0.50);
+	background-color: #f98103;
 }
 /*Navigation*/
 

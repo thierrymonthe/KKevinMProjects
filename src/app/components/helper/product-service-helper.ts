@@ -7,6 +7,7 @@ export class ProductServiceHelper {
     public watchStorage(): Observable<String> {
         return this.storageSub.asObservable();
     }
+
     protected getProductsObject( products: Product[] ){
         let storage = this.getProductsFromStorage(),
             items: string[];
@@ -19,6 +20,7 @@ export class ProductServiceHelper {
             }
             return [];
     }
+    
     protected addProductToStorage(id: number) {
 
         let storage = this.getProductsFromStorage(),
@@ -26,10 +28,10 @@ export class ProductServiceHelper {
         if (storage != null && storage != '') {
             items = JSON.parse(storage);
             items.push(id.toString());
-            localStorage.setItem('vima_cart', JSON.stringify(items));
+            localStorage.setItem('Kahef_cart', JSON.stringify(items));
             this.storageSub.next(JSON.stringify(storage));
         } else {
-            localStorage.setItem('vima_cart', JSON.stringify([id.toString()]));
+            localStorage.setItem('Kahef_cart', JSON.stringify([id.toString()]));
             this.storageSub.next(JSON.stringify(storage));
         }
 
@@ -58,7 +60,7 @@ export class ProductServiceHelper {
             
             items.splice( items.indexOf( id.toString() ), 1 );
 
-            localStorage.setItem('vima_cart', JSON.stringify(items));
+            localStorage.setItem('Kahef_cart', JSON.stringify(items));
             this.storageSub.next(JSON.stringify(items));
 
         }
@@ -77,7 +79,7 @@ export class ProductServiceHelper {
             itemsToDelete = this.getProductsFromStorageById(id);
 
             itemsToDelete.forEach((item: string) => items.splice(items.findIndex((e: string) => e == item), 1));
-            localStorage.setItem('vima_cart', JSON.stringify(items));
+            localStorage.setItem('Kahef_cart', JSON.stringify(items));
 
             this.storageSub.next(JSON.stringify(items));
 
@@ -85,7 +87,7 @@ export class ProductServiceHelper {
 
     }
     protected getProductsFromStorage() {
-        return localStorage.getItem('vima_cart') != null ? localStorage.getItem('vima_cart') : '';
+        return localStorage.getItem('Kahef_cart') != null ? localStorage.getItem('Kahef_cart') : '';
     }
     protected getProductsLengthFromStorage() {
         let storage = this.getProductsFromStorage();
@@ -111,10 +113,10 @@ export class ProductServiceHelper {
         if (storage != null && storage != '') {
             items = JSON.parse(storage);
             items.push(id.toString());
-            localStorage.setItem('vima_wishlist', JSON.stringify(items));
+            localStorage.setItem('Kahef_wishlist', JSON.stringify(items));
             this.storageSub.next(JSON.stringify(storage));
         } else {
-            localStorage.setItem('vima_wishlist', JSON.stringify([id.toString()]));
+            localStorage.setItem('Kahef_wishlist', JSON.stringify([id.toString()]));
             this.storageSub.next(JSON.stringify(storage));
         }
 
@@ -143,7 +145,7 @@ export class ProductServiceHelper {
             
             items.splice( items.indexOf( id.toString() ), 1 );
 
-            localStorage.setItem('vima_wishlist', JSON.stringify(items));
+            localStorage.setItem('Kahef_wishlist', JSON.stringify(items));
             this.storageSub.next(JSON.stringify(items));
 
         }
@@ -162,7 +164,7 @@ export class ProductServiceHelper {
             itemsToDelete = this.getWishlistProductsFromStorageById(id);
 
             itemsToDelete.forEach((item: string) => items.splice(items.findIndex((e: string) => e == item), 1));
-            localStorage.setItem('vima_wishlist', JSON.stringify(items));
+            localStorage.setItem('Kahef_wishlist', JSON.stringify(items));
 
             this.storageSub.next(JSON.stringify(items));
 
@@ -170,7 +172,7 @@ export class ProductServiceHelper {
 
     }
     protected getWishlistProductsFromStorage() {
-        return localStorage.getItem('vima_wishlist') != null ? localStorage.getItem('vima_wishlist') : '';
+        return localStorage.getItem('Kahef_wishlist') != null ? localStorage.getItem('Kahef_wishlist') : '';
     }
     
     protected getWishlistProductsLengthFromStorage() {

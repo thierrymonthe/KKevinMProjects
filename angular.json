@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Vima": {
+    "Kahef": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Vima",
+            "outputPath": "dist/Kahef",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -78,18 +78,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Vima:build"
+            "browserTarget": "Kahef:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Vima:build:production"
+              "browserTarget": "Kahef:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Vima:build"
+            "browserTarget": "Kahef:build"
           }
         },
         "test": {
@@ -126,16 +126,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Vima:serve"
+            "devServerTarget": "Kahef:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Vima:serve:production"
+              "devServerTarget": "Kahef:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Vima"
+  "defaultProject": "Kahef"
 }
