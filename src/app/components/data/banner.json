@@ -5,8 +5,8 @@
         "title":"We help all people in need",
         "subtitle":"Around the world.",
         "text":"Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
-        "position":"col-lg-12",
-        "extraclass":"right-side-content far-right"
+        "position":"col-lg-8",
+        "extraclass":"right-side-content text-center"
     },
     {
         "id":2,
@@ -23,7 +23,7 @@
         "title":"Our Helping people in need",
         "subtitle":"Around the world.",
         "text":"Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
-        "position":"col-lg-12",
-        "extraclass":"left-side-content text-right"
+        "position":"col-lg-8",
+        "extraclass":"right-side-content text-center"
     }
 ]

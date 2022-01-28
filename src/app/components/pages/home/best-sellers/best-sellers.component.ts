@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ShopService } from 'src/app/components/services/shop.service';
 
 @Component({
@@ -7,6 +7,5 @@ import { ShopService } from 'src/app/components/services/shop.service';
   styleUrls: ['./best-sellers.component.css']
 })
 export class BestSellersComponent extends ShopService {
-
-
+  @Input() title = ''
 }
