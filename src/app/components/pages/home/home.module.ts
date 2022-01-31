@@ -20,11 +20,13 @@ import { DonationCampaignsComponent } from './donation-campaigns/donation-campai
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { ShopBoxComponent } from './shop-box/shop-box.component';
+import {PartnersComponent} from './partners/partners.component';
 
 
 @NgModule({
   declarations: [
-    HomeComponent, 
+    HomeComponent,
+    PartnersComponent,
     BannerComponent,
     ServiceTypeComponent,
     TeamComponent,

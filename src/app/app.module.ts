@@ -10,11 +10,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ItemComponent } from './components/services/filter/item/item.component';
+import { ExecutiveBoardComponent } from './components/pages/executive-board/executive-board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemComponent
+    ItemComponent,
+    ExecutiveBoardComponent
   ],
   imports: [
     BrowserModule,
