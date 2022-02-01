@@ -176,6 +176,7 @@ const routes: Routes = [
     loadChildren: () => import('./components/pages/story-grid/story-grid.module').then(m => m.StoryGridModule),
     data: {breadcrumb: 'Projekte'}
   },
+
   {
     path: 'project',
     loadChildren: () => import('./components/pages/story-grid/story-grid.module').then(m => m.StoryGridModule),
