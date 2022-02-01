@@ -1532,6 +1532,17 @@ span.type-tag {
 	width: 125px;
 	height: 125px;
 }
+
+.browse-cat .categories .icon3 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+}
+
 .browse-cat .categories .icon2 {
 	width: 100%;
 	height: 100%;

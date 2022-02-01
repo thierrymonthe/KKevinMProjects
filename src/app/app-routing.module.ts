@@ -67,6 +67,31 @@ const routes: Routes = [
     loadChildren: () => import('./components/pages/donation-archive/donation-archive.module').then(m => m.DonationArchiveModule),
     data: {breadcrumb: 'Donation Archive'}
   },
+
+  // Board Of Directors
+  {
+    path: 'board-of-directors',
+    loadChildren: () => import('./components/pages/executive-board/executive-board.module').then(m => m.ExecutiveBoardModule),
+    data: {breadcrumb: 'Vorstand'}
+  },
+  // Law
+  {
+    path: 'law',
+    loadChildren: () => import('./components/pages/law/law.module').then(m => m.LawModule),
+    data: {breadcrumb: 'Satzung'}
+  },
+  // Become a member
+  {
+    path: 'become-a-member',
+    loadChildren: () => import('./components/pages/become-a-member/become-a-member.module').then(m => m.BecomeAMemberModule),
+    data: {breadcrumb: 'Mitglied Werden'}
+  },
+  // Become a volunter
+  {
+    path: 'become-a-volunteer',
+    loadChildren: () => import('./components/pages/become-a-volunter/become-a-volunter.module').then(m => m.BecomeAVolunterModule),
+    data: {breadcrumb: 'Freiwilliger werden'}
+  },
   {
     path: 'donation/cat/:catId',
     loadChildren: () => import('./components/pages/donation-archive/donation-archive.module').then(m => m.DonationArchiveModule),
@@ -149,17 +174,17 @@ const routes: Routes = [
   {
     path: 'story/tag/:tagId',
     loadChildren: () => import('./components/pages/story-grid/story-grid.module').then(m => m.StoryGridModule),
-    data: {breadcrumb: 'Story Archive'}
+    data: {breadcrumb: 'Projekte'}
   },
   {
-    path: 'story-grid',
+    path: 'project',
     loadChildren: () => import('./components/pages/story-grid/story-grid.module').then(m => m.StoryGridModule),
-    data: {breadcrumb: 'Story Archive'}
+    data: {breadcrumb: 'Projekte'}
   },
   {
-    path: 'story-details/:id',
+    path: 'project/:id',
     loadChildren: () => import('./components/pages/story-details/story-details.module').then(m => m.StoryDetailsModule),
-    data: {breadcrumb: 'Story Details'}
+    data: {breadcrumb: 'Projekte'}
   },
   // Error 404
   {

@@ -23,13 +23,8 @@
       },
       {
         "id": 2.4,
-        "link": "/statute",
+        "link": "/law",
         "linkText": "Satzung"
-      },
-      {
-        "id": 2.5,
-        "link": "/members",
-        "linkText": "Mitglieder"
       },
       {
         "id": 2.6,
@@ -46,7 +41,8 @@
   {
     "id": 3,
     "linkText": "Projekte",
-    "child": true,
+    "link": "/project",
+    "child": false,
     "submenu": [
       {
         "id": 3.1,
