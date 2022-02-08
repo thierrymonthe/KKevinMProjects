@@ -62,7 +62,7 @@ export class DonationHelperService  implements AfterContentInit, OnInit {
     var elems = donationblock.filter((item: { timestamp: number | any; postdate: string | number | Date; }) => {
       return item.timestamp < new Date(item.postdate);
     });
-    return elems;
+    return donationblock;
   }
   public setCategoriesCount() {
     for (var i = 0; i < this.donationcategory.length; i++) {

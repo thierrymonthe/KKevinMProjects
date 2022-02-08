@@ -7,6 +7,7 @@ import {ContentComponent} from './content/content.component';
 import {SharedModule} from '../../shared/shared.module';
 import { BecomeAVolunterRoutingModule} from './become-a-volunter-routing.module';
 import {BecomeAVolunterComponent} from './become-a-volunter.component';
+import {FormsModule} from '@angular/forms';
 
 
 // @ts-ignore
@@ -16,13 +17,14 @@ import {BecomeAVolunterComponent} from './become-a-volunter.component';
     ContentComponent,
     BecomeAVolunterComponent
   ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    BecomeAVolunterRoutingModule,
-    NgbModule,
+    imports: [
+        CommonModule,
+        SharedModule,
+        BecomeAVolunterRoutingModule,
+        NgbModule,
+        FormsModule,
 
-  ]
+    ]
 })
 export class BecomeAVolunterModule {
 }

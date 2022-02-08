@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Route} from '@angular/router';
 
 @Component({
   selector: 'app-story-details',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./story-details.component.css']
 })
 export class StoryDetailsComponent implements OnInit {
+  id = 1;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) {}
 
-  ngOnInit(): void {
+  // tslint:disable-next-line:typedef
+  ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      this.id = params.id;
+    });
   }
 
 }

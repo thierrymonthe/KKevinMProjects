@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {PrivacyPolicyRoutingModule} from './components/pages/privacy-policy/privacy-policy-routing.module';
 
 const routes: Routes = [
   // Home
@@ -29,6 +30,12 @@ const routes: Routes = [
     path: 'about',
     loadChildren: () => import('./components/pages/about/about.module').then(m => m.AboutModule),
     data: {breadcrumb: 'About Us'}
+  },
+  // spenden
+  {
+    path: 'donate',
+    loadChildren: () => import('./components/pages/spenden/spenden.module').then(m => m.SpendenModule),
+    data: {breadcrumb: 'Spenden'}
   },
   // Shop
   {
@@ -122,7 +129,7 @@ const routes: Routes = [
   {
     path: 'contact',
     loadChildren: () => import('./components/pages/contact/contact.module').then(m => m.ContactModule),
-    data: {breadcrumb: 'Contact'}
+    data: {breadcrumb: 'Kontakt'}
   },
   {
     path: 'login',
@@ -170,11 +177,23 @@ const routes: Routes = [
     loadChildren: () => import('./components/pages/blog-details/blog-details.module').then(m => m.BlogDetailsModule),
     data: {breadcrumb: 'Blog Details'}
   },
+  // privacy-policy
+  {
+    path: 'privacy-policy',
+    loadChildren: () => import('./components/pages/privacy-policy/privacy-policy.module').then(m => m.PrivacyPolicyModule),
+    data: {breadcrumb: 'Datenschutzerklärung'}
+  },
   // Story
   {
     path: 'story/tag/:tagId',
     loadChildren: () => import('./components/pages/story-grid/story-grid.module').then(m => m.StoryGridModule),
     data: {breadcrumb: 'Projekte'}
+  },
+  // Imprint
+  {
+    path: 'imprint',
+    loadChildren: () => import('./components/pages/imprint/imprint.module').then(m => m.ImprintModule),
+    data: {breadcrumb: 'Impressum'}
   },
 
   {

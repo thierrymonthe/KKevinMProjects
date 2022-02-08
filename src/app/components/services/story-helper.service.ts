@@ -48,7 +48,7 @@ export class StoryHelperService implements AfterContentInit, OnInit {
     ));
   }
 
-  public recentPost() { 
+  public recentPost() {
     var elems = storyblock.filter((item: { timestamp: number | any; postdate: string | number | Date; }) => {
       return item.timestamp < new Date(item.postdate);
     });
@@ -56,6 +56,7 @@ export class StoryHelperService implements AfterContentInit, OnInit {
   }
   // Post Details
   public setPost(id: any) {
+
     this.storydetails = storyblock.filter((item: { id: any; }) => { return item.id == id });
   }
   // Tags Filter
