@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { SwiperOptions } from 'swiper';
-import data from '../../../data/story/story.json';
+import {Component, OnInit} from '@angular/core';
+import {SwiperOptions} from 'swiper';
+import data from '../../../data/teams.json';
 
 @Component({
   selector: 'app-team',
@@ -8,8 +8,15 @@ import data from '../../../data/story/story.json';
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
-  public teamblock = data;
-  constructor() { }
+  public teamblock: {
+    img: string,
+    name: string,
+    countryCode: string
+  }[] = data;
+
+  constructor() {
+  }
+
   // Settings
   settings: SwiperOptions = {
     slidesPerView: 2,
@@ -37,7 +44,7 @@ export class TeamComponent implements OnInit {
         spaceBetween: 5,
       },
     }
-  }
+  };
 
   ngOnInit(): void {
   }

@@ -178,7 +178,7 @@ export class ShopService extends ProductService implements AfterContentInit, Aft
   //   if (this.searchText === "") {
   //     return;
   //   } else {
-  //     this.route.navigate(['shop/search', this.searchText]);
+  //     this.route.navigate(['shop/search-result', this.searchText]);
   //   }
   // }
   // Price Filter

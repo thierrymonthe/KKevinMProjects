@@ -8,6 +8,8 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent extends StoryHelperService implements OnInit {
+  item: any;
+
   constructor(private routes: ActivatedRoute) {
     // @ts-ignore
     super();
@@ -17,10 +19,12 @@ export class ContentComponent extends StoryHelperService implements OnInit {
   ngOnInit() {
     super.ngOnInit();
     this.routes.paramMap.subscribe(params => {
-      const data: {id?: number} = (params as any).params;
+      const data: { value?: string } = (params as any).params;
       if (data) {
-        this.setPost(data.id as number);
+        this.getActuality(data.value?.trim());
       }
     });
+    console.log(this.storydetails);
+
   }
 }

@@ -22,12 +22,14 @@ import { StorySidebarComponent } from './story-sidebar/story-sidebar.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { CtaComponent } from './cta/cta.component';
 import { VideoCtaComponent } from './video-cta/video-cta.component';
+import { SearchComponent } from './search/search.component';
 
 
 
 @NgModule({
   declarations: [
     AdvertisementComponent,
+    SearchComponent,
     BlogSidebarComponent,
     BreadcrumbsComponent,
     DonationSidebarComponent,
@@ -39,7 +41,8 @@ import { VideoCtaComponent } from './video-cta/video-cta.component';
     StorySidebarComponent,
     TopBarComponent,
     CtaComponent,
-    VideoCtaComponent
+    VideoCtaComponent,
+    SearchComponent
   ],
   imports: [
     CommonModule,

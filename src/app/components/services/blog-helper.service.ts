@@ -65,7 +65,7 @@ export class BlogHelperService implements AfterContentInit, OnInit {
     if (this.searchText === "") {
       return;
     } else {
-      this.router.navigate(['blog/search', this.searchText]);
+      this.router.navigate(['blog/search-result', this.searchText]);
     }
   }
   // Filter
@@ -147,11 +147,11 @@ export class BlogHelperService implements AfterContentInit, OnInit {
     if (items[index - 1] !== undefined && index - 1 !== -1) {
       item = items[index - 1];
       id = item.id;
-      // Show the previous button 
+      // Show the previous button
       output.push("<a href='/blog-details/" + item.id + "' class='sigma_single-pagination-item pagination-prev'> <span>Previous Post</span><h6>" + item.title.slice(0, 20) + "</h6> </a>");
     }
     if (items[index + 1] !== undefined && index <= items.length - 1) {
-      // Show next button 
+      // Show next button
       item = items[index + 1];
       id = item.id;
       output.push("<a href='/blog-details/" + item.id + "' class='sigma_single-pagination-item pagination-next'> <span>Next Post</span><h6>" + item.title.slice(0, 20) + "</h6> </a>");

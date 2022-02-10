@@ -202,6 +202,11 @@ const routes: Routes = [
     data: {breadcrumb: 'Projekte'}
   },
   {
+    path: 'search-result/:value',
+    loadChildren: () => import('./components/pages/search-result/search-result.module').then(m => m.SearchResultModule),
+    data: {breadcrumb: ''}
+  },
+  {
     path: 'project/:id',
     loadChildren: () => import('./components/pages/story-details/story-details.module').then(m => m.StoryDetailsModule),
     data: {breadcrumb: 'Projekte'}
