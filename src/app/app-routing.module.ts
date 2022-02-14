@@ -4,32 +4,32 @@ import {PrivacyPolicyRoutingModule} from './components/pages/privacy-policy/priv
 
 const routes: Routes = [
   // Home
-  {path: '', loadChildren: () => import('./components/pages/home/home.module').then(m => m.HomeModule), data: {breadcrumb: 'Homepage'}},
-  {
-    path: 'home-v2',
-    loadChildren: () => import('./components/pages/home-two/home-two.module').then(m => m.HomeTwoModule),
-    data: {breadcrumb: 'Homepage'}
-  },
-  {
-    path: 'home-v3',
-    loadChildren: () => import('./components/pages/home-three/home-three.module').then(m => m.HomeThreeModule),
-    data: {breadcrumb: 'Homepage'}
-  },
-  {
-    path: 'home-v4',
-    loadChildren: () => import('./components/pages/home-four/home-four.module').then(m => m.HomeFourModule),
-    data: {breadcrumb: 'Homepage'}
-  },
-  {
-    path: 'home-v5',
-    loadChildren: () => import('./components/pages/home-five/home-five.module').then(m => m.HomeFiveModule),
-    data: {breadcrumb: 'Homepage'}
-  },
+  {path: '', loadChildren: () => import('./components/pages/home/home.module').then(m => m.HomeModule), data: {breadcrumb: 'Startseite'}},
+  // {
+  //   path: 'home-v2',
+  //   loadChildren: () => import('./components/pages/home-two/home-two.module').then(m => m.HomeTwoModule),
+  //   data: {breadcrumb: 'Homepage'}
+  // },
+  // {
+  //   path: 'home-v3',
+  //   loadChildren: () => import('./components/pages/home-three/home-three.module').then(m => m.HomeThreeModule),
+  //   data: {breadcrumb: 'Homepage'}
+  // },
+  // {
+  //   path: 'home-v4',
+  //   loadChildren: () => import('./components/pages/home-four/home-four.module').then(m => m.HomeFourModule),
+  //   data: {breadcrumb: 'Homepage'}
+  // },
+  // {
+  //   path: 'home-v5',
+  //   loadChildren: () => import('./components/pages/home-five/home-five.module').then(m => m.HomeFiveModule),
+  //   data: {breadcrumb: 'Homepage'}
+  // },
   // About
   {
     path: 'about',
     loadChildren: () => import('./components/pages/about/about.module').then(m => m.AboutModule),
-    data: {breadcrumb: 'About Us'}
+    data: {breadcrumb: 'Uber uns'}
   },
   // spenden
   {

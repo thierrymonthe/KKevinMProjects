@@ -3,6 +3,7 @@ import {ActivatedRoute} from '@angular/router';
 import storyblock from '../data/story/story.json';
 import authors from '../data/authors.json';
 import tags from '../data/story/tags.json';
+import {Actuality} from '../models/actuality';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class StoryHelperService implements AfterContentInit, OnInit {
   public storyblock = storyblock;
   public storytags = tags;
   public tags = tags;
-  public storydetails: any[] = storyblock;
+  public storydetails: Actuality[] = storyblock;
 
   constructor(
     private route: ActivatedRoute
@@ -69,10 +70,10 @@ export class StoryHelperService implements AfterContentInit, OnInit {
 
   // find Actuality
 
-  public getActuality(title: any) {
+  public getActuality(title: any): Actuality {
 
-    this.storydetails = storyblock.filter((item: { title: any; }) => {
-      return item.title === title;
+    return  this.storydetails = storyblock.filter((item: { title: any; }) => {
+      return item.title.toLowerCase().includes(title.toLowerCase());
     })[0];
   }
 
