@@ -72,7 +72,7 @@ export class StoryHelperService implements AfterContentInit, OnInit {
 
   public getActuality(title: any): Actuality {
 
-    return  this.storydetails = storyblock.filter((item: { title: any; }) => {
+    return this.storydetails = storyblock.filter((item: { title: any; }) => {
       return item.title.toLowerCase().includes(title.toLowerCase());
     })[0];
   }
@@ -145,5 +145,9 @@ export class StoryHelperService implements AfterContentInit, OnInit {
 
   openSocialPopup(social: any) {
     window.open(social.link, 'MsgWindow', 'width=600,height=600');
+  }
+
+  public filterProject(year: number) {
+    return this.storyblock = storyblock.filter((item) => item.year === year);
   }
 }

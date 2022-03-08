@@ -11,6 +11,11 @@ export class BestSellersComponent extends ShopService {
   @Input() datas: {
     image: string;
     title: string;
+    links?: string
   }[] | undefined;
 
+  // tslint:disable-next-line:typedef
+ public gotoWebSite(links: string) {
+   if(links) {  window.open(links, '_blank'); }
+  }
 }

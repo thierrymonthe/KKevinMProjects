@@ -10,6 +10,7 @@ export class HomeComponent extends ShopService implements OnInit {
 
   partners = [{
     id: 0,
+    links: 'https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Kommunales%20Integrationszentrum/',
     title: 'kommunales',
     image: [
       '/assets/img/partners/partner-1.jpg',
@@ -18,12 +19,15 @@ export class HomeComponent extends ShopService implements OnInit {
     {
       id: 1,
       title: 'cohedo',
+      links: 'https://www.kreis-steinfurt.de/kv_steinfurt/Kreisverwaltung/%C3%84mter/Kommunales%20Integrationszentrum/',
+
       image: [
         '/assets/img/partners/partner-2.jpg',
       ]
     },
     {
       id: 2,
+      links: 'https://cohedo.de/',
       title: 'stadt dortmund',
       image: [
         '/assets/img/partners/partner-3.jpg',

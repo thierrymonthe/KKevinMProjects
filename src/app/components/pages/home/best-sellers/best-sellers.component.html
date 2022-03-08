@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4" *ngFor="let item of datas | slice:0:3">
-        <div class="product-box mb-md-20">
+        <div class="product-box mb-md-20" style="cursor: pointer" (click)="gotoWebSite(item.links)" >
           <div class="product-img">
             <a>
               <img [src]="item.image[0]" class="img-fluid full-width" [alt]="item.title">

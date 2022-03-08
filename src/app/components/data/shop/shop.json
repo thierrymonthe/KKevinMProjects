@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Veg Curry",
+    "links": "https://www.bra.nrw.de/",
     "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
     "image": [
       "assets/img/shop/support-1.jpg",
@@ -54,6 +55,7 @@
   },
   {
     "id": 2,
+    "links": "https://www.mkffi.nrw/komm-nrw",
     "title": "Veg Burger",
     "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
     "image": [
@@ -107,6 +109,7 @@
   },
   {
     "id": 3,
+    "links": "https://www.arbeit-bildung-kultur.de/cms/logo-des-ministerium-fuer-kinder-familie-fluechtlinge-und-integration-des-landes-nordrhein-westfalen/",
     "title": "Meat Burger",
     "shortdesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip",
     "image": [
