@@ -148,6 +148,6 @@ export class StoryHelperService implements AfterContentInit, OnInit {
   }
 
   public filterProject(year: number) {
-    return this.storyblock = storyblock.filter((item) => item.year === year);
+    return this.storyblock = storyblock.filter((item: any) => item.year === year);
   }
 }
