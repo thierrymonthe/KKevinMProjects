@@ -140,14 +140,19 @@ Version: 1.0.0
 		border-right: 0;
 	}
 	/*navigation*/
-	.header .navigation .right-side-navigation .hamburger-menu {
+  .header .navigation .right-side-navigation{
+    display: block;
+  }
+
+  .header .navigation .right-side-navigation .hamburger-menu {
 		display: block;
 	}
-	.header .navigation {
-		justify-content: flex-end;
-		width: 100%;
-		position: relative;
-	}
+
+  .header .navigation {
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
 	.header .navigation .right-side-navigation ul {
 		position: static;
 		width: 100%;

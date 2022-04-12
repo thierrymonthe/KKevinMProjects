@@ -1385,6 +1385,11 @@ span.type-tag {
 	left: 100%;
 	top: -3%;
 }
+
+.header .navigation .right-side-navigation{
+  display: none;
+}
+
 .header .navigation .right-side-navigation ul {
 	display: flex;
 	align-items: center;
