@@ -189,6 +189,8 @@ const routes: Routes = [
     loadChildren: () => import('./components/pages/story-grid/story-grid.module').then(m => m.StoryGridModule),
     data: {breadcrumb: 'Projekte'}
   },
+
+  
   // Imprint
   {
     path: 'imprint',
