@@ -160,7 +160,7 @@ Version: 1.0.0
 	.header .navigation .right-side-navigation .hamburger-menu {
 		position: absolute;
 		left: 0;
-		margin-left: 0;
+		margin-left: -35px;
 	}
 	.header .navigation .right-side-navigation ul li.user-details {
 		position: absolute;
