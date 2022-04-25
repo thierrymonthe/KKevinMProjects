@@ -57,11 +57,11 @@ export class ShopService extends ProductService implements AfterContentInit, Aft
   categories: FilterCategory[] = filtercategory;
   filteredItems: Item[] | Product[] = [] = [...this.items];
 
-  filterItemsByCategory(category: FilterCategory, id: number) {
+  filterItemsByCategory(category: FilterCategory, id: number,) {
     this.filteredItems = this.items.filter((item: Item) => {
-      return item.filtercategory.includes( parseInt(category.id) );
+      return item.filtercategory.includes(parseInt(category.id));
     });
-    this.activeItem = id;
+    this.activeItem = id
   }
   reset(id: number) {
     this.filteredItems = [...this.items];
@@ -178,7 +178,7 @@ export class ShopService extends ProductService implements AfterContentInit, Aft
   //   if (this.searchText === "") {
   //     return;
   //   } else {
-  //     this.route.navigate(['shop/search', this.searchText]);
+  //     this.route.navigate(['shop/search-result', this.searchText]);
   //   }
   // }
   // Price Filter

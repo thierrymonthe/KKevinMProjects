@@ -1,29 +1,29 @@
 [
-    {
-        "id":1,
-        "image":"assets/img/banner/banner-kahef-1.jpg",
-        "title":"We help all people in need",
-        "subtitle":"Around the world.",
-        "text":"Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
-        "position":"col-lg-12",
-        "extraclass":"right-side-content far-right"
-    },
-    {
-        "id":2,
-        "image":"assets/img/banner/banner-kahef-2.jpg",
-        "title":"Our Helping people in need",
-        "subtitle":"Around the world.",
-        "text":"Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
-        "position":"col-lg-8",
-        "extraclass":"right-side-content text-center"
-    },
-    {
-        "id":3,
-        "image":"assets/img/banner/banner-kahef.jpg",
-        "title":"Our Helping people in need",
-        "subtitle":"Around the world.",
-        "text":"Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfishf",
-        "position":"col-lg-12",
-        "extraclass":"left-side-content text-right"
-    }
+  {
+    "id":1,
+    "image": "assets/img/banner/banner-kahef-1.jpg",
+    "title": "Wir helfen allen Menschen in Not",
+    "subtitle": "Rund um die Welt",
+    "text": "Grauer Aal-Wels Langnasen-Peitschenschwanz-Wels Kleinaugen-Quadratschwanz-Königin Danio Einhornfisch Kurznasen-Grünauge Füsilierfisch Silberkarpfen Knabberer Haisauger Schleie Lookdown-Wels",
+    "position":"col-lg-8",
+    "extraclass": "right-side-content text-center"
+  },
+  {
+    "id":2,
+    "image": "assets/img/banner/banner-kahef-2.jpg",
+    "title": "Unsere Hilfe für Menschen in Not",
+    "subtitle": "Rund um die Welt",
+    "text": "Grauer Aal-Wels Langnasen-Peitschenschwanz-Wels Kleinaugen-Quadratschwanz-Königin Danio Einhornfisch Kurznasen-Grünaugen-Füsilierfisch Silberkarpfen Knabberer Haisauger Schleie Lookdown-Wels",
+    "position":"col-lg-8",
+    "extraclass": "right-side-content text-center"
+  },
+  {
+    "id":3,
+    "image": "assets/img/banner/banner-kahef.jpg",
+    "title": "Unsere Hilfe für Menschen in Not",
+    "subtitle": "Rund um die Welt",
+    "text": "Grauer Aal-Wels Langnasen-Peitschenschwanz-Wels Kleinaugen-Quadratschwanz-Königin Danio Einhornfisch Kurznasen-Grünaugen-Füsilierfisch Silberkarpfen Knabberer Haisauger-Schleie Lookdown-Welsf",
+    "position":"col-lg-8",
+    "extraclass": "right-side-content text-center"
+  }
 ]

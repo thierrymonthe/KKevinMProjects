@@ -1,5 +1,5 @@
 /*
-Theme Name: VIMA - Charity E-commerce HTML5 Template.
+Theme Name: kahef - Charity E-commerce HTML5 Template.
 Author: Slidesigma
 Author URL: https://www.templatemonster.com/vendors/slidesigmathemes/
 Version: 1.0.0
@@ -140,14 +140,19 @@ Version: 1.0.0
 		border-right: 0;
 	}
 	/*navigation*/
-	.header .navigation .right-side-navigation .hamburger-menu {
+  .header .navigation .right-side-navigation{
+    display: block;
+  }
+
+  .header .navigation .right-side-navigation .hamburger-menu {
 		display: block;
 	}
-	.header .navigation {
-		justify-content: flex-end;
-		width: 100%;
-		position: relative;
-	}
+
+  .header .navigation {
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
 	.header .navigation .right-side-navigation ul {
 		position: static;
 		width: 100%;
@@ -155,7 +160,7 @@ Version: 1.0.0
 	.header .navigation .right-side-navigation .hamburger-menu {
 		position: absolute;
 		left: 0;
-		margin-left: 0;
+		margin-left: -35px;
 	}
 	.header .navigation .right-side-navigation ul li.user-details {
 		position: absolute;

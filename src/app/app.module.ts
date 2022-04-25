@@ -14,7 +14,7 @@ import { ItemComponent } from './components/services/filter/item/item.component'
 @NgModule({
   declarations: [
     AppComponent,
-    ItemComponent
+    ItemComponent,
   ],
   imports: [
     BrowserModule,

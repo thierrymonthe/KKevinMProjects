@@ -17,30 +17,29 @@
     <div class="row">
       <div class="col-xl col-lg-4 col-md-4 col-sm-6">
         <div class="footer-contact">
-          <h6 class="text-custom-white">About Us</h6>
-          <div class="logo mb-xl-20">
-            <a href="#">
-              <img src="assets/img/logo-kahef.jpg" class="img-fluid" alt="img">
-            </a>
+          <h6 class="text-custom-white">Über uns</h6>
+          <div class="logo mb-xl-20 text-custom-white">
+
+            <div>
+              <a routerLink="/">
+                <img src="/assets/img/logo-kahef.svg" class="image-fit" alt="logo">
+              </a>
+            </div>
+
           </div>
-          <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt</p>
         </div>
       </div>
       <div class="col-xl col-lg-4 col-md-4 col-sm-6">
         <div class="footer-links">
           <h6 class="text-custom-white">Useful Links</h6>
           <ul>
-            <li><a routerLink="/" class="text-white fw-500">Starseite</a>
+            <li><a routerLink="/" class="text-white fw-500">Startseite</a>
             </li>
-            <li><a routerLink="/about" class="text-white fw-500">Über uns</a>
+            <li><a routerLink="/project" class="text-white fw-500">Projecte</a>
             </li>
-            <li><a routerLink="/blog-details/1" class="text-white fw-500">Impressum</a>
+            <li><a routerLink="/donate" class="text-white fw-500">Spenden</a>
             </li>
-            <li><a routerLink="/donation-details/1" class="text-white fw-500">Kontakt</a>
-            </li>
-            <li><a routerLink="/story-details/1" class="text-white fw-500">Datenschutzerklärung</a>
-            </li>
+
           </ul>
         </div>
       </div>
@@ -48,15 +47,11 @@
         <div class="footer-links">
           <h6 class="text-custom-white">My Account</h6>
           <ul>
-            <li><a routerLink="/login" class="text-white fw-500">lorem</a>
+            <li><a routerLink="/about" class="text-white fw-500">Uber Uns</a>
             </li>
-            <li><a routerLink="/register" class="text-white fw-500">lorem</a>
+            <li><a routerLink="/become-a-member" class="text-white fw-500">Mitglied Werden</a>
             </li>
-            <li><a routerLink="/wishlist" class="text-white fw-500">Wishlist</a>
-            </li>
-            <li><a routerLink="/checkout" class="text-white fw-500">Checkout</a>
-            </li>
-            <li><a routerLink="/cart" class="text-white fw-500"> Cart</a>
+            <li><a routerLink="/become-a-volunteer" class="text-white fw-500">Freiwilliger Werden</a>
             </li>
           </ul>
         </div>
@@ -65,13 +60,9 @@
         <div class="footer-links">
           <h6 class="text-custom-white">Other Links</h6>
           <ul>
-            <li><a routerLink="/donation-details/1" class="text-white fw-500">Donation Detail</a>
+            <li><a routerLink="/become-a-member" class="text-white fw-500">Donation Detail</a>
             </li>
-            <li><a routerLink="/story-details/1" class="text-white fw-500">Story Detail</a>
-            </li>
-            <li><a routerLink="/cart" class="text-white fw-500">Track Order</a>
-            </li>
-            <li><a routerLink="/blog-details/1" class="text-white fw-500">Blog</a>
+            <li><a routerLink="/project" class="text-white fw-500">Project Detail</a>
             </li>
           </ul>
         </div>
@@ -81,20 +72,12 @@
           <h6 class="text-custom-white">Contact info</h6>
           <ul class="contact-info">
             <li>
-              <a href="#" class="text-white"> <span><i class="pe-7s-timer"></i></span>
-                Monday - Friday: 9:00 AM - 06:00 PM</a>
-            </li>
-            <li>
               <a href="#" class="text-white"> <span><i class="pe-7s-mail"></i></span>
-                info@example.com</a>
+                info@kahef.de</a>
             </li>
             <li>
               <a href="#" class="text-white"> <span><i class="pe-7s-call"></i></span>
-                (+348) 123 456 7890</a>
-            </li>
-            <li>
-              <a href="#" class="text-white"> <span><i class="pe-7s-map-marker"></i></span>
-                (+348) 123 456 7890</a>
+                +49 123 45678</a>
             </li>
           </ul>
         </div>
@@ -105,15 +88,22 @@
 <div class="copyright bg-black">
   <div class="container-fluid custom-container">
     <div class="row">
+      <!--<div class="col-lg-4">
+          <div class="payment-logo mb-md-20">
+              <div class="payemt-icon">
+                  <img src="assets/img/footer-bottom-img.png" alt="img">
+              </div>
+          </div>
+      </div>-->
+      <div class="col-lg-4 text-center medewithlove align-self-center"><a href="#" class="text-custom-white">Made
+        with Real <i class="fas fa-heart"></i> Kaeyros-analytics</a>
+      </div>
       <div class="col-lg-4">
-        <div class=""> <span class="text-white"> <a href="#" class="text-white">Web Design by Kaeyros-analytics</a></span>
+        <div class="text-center"><span class="text-white"><a routerLink="/privacy-policy" class="text-custom-white">Datenschutzerklärung</a></span>
         </div>
       </div>
-      <div class="col-lg-4 text-center medewithlove align-self-center"><a href="#" class="text-custom-white">Made
-        with Real <i class="fas fa-heart"></i> kahef</a>
-      </div>
       <div class="col-lg-4">
-        <div class="copyright-text"> <span class="text-white">© <a href="#" class="text-white">kahef</a> -
+        <div class="copyright-text"> <span class="text-white">© <a href="#" class="text-white">KAHEF</a> -
                         2021 | All Right Reserved</span>
         </div>
       </div>

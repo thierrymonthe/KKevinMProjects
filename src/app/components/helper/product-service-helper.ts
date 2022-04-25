@@ -7,7 +7,6 @@ export class ProductServiceHelper {
     public watchStorage(): Observable<String> {
         return this.storageSub.asObservable();
     }
-
     protected getProductsObject( products: Product[] ){
         let storage = this.getProductsFromStorage(),
             items: string[];
@@ -20,7 +19,6 @@ export class ProductServiceHelper {
             }
             return [];
     }
-    
     protected addProductToStorage(id: number) {
 
         let storage = this.getProductsFromStorage(),
@@ -28,10 +26,10 @@ export class ProductServiceHelper {
         if (storage != null && storage != '') {
             items = JSON.parse(storage);
             items.push(id.toString());
-            localStorage.setItem('Kahef_cart', JSON.stringify(items));
+            localStorage.setItem('kahef_cart', JSON.stringify(items));
             this.storageSub.next(JSON.stringify(storage));
         } else {
-            localStorage.setItem('Kahef_cart', JSON.stringify([id.toString()]));
+            localStorage.setItem('kahef_cart', JSON.stringify([id.toString()]));
             this.storageSub.next(JSON.stringify(storage));
         }
 
@@ -57,10 +55,10 @@ export class ProductServiceHelper {
             items;
         if (storage != null && storage != '') {
             items = JSON.parse(storage);
-            
+
             items.splice( items.indexOf( id.toString() ), 1 );
 
-            localStorage.setItem('Kahef_cart', JSON.stringify(items));
+            localStorage.setItem('kahef_cart', JSON.stringify(items));
             this.storageSub.next(JSON.stringify(items));
 
         }
@@ -79,7 +77,7 @@ export class ProductServiceHelper {
             itemsToDelete = this.getProductsFromStorageById(id);
 
             itemsToDelete.forEach((item: string) => items.splice(items.findIndex((e: string) => e == item), 1));
-            localStorage.setItem('Kahef_cart', JSON.stringify(items));
+            localStorage.setItem('kahef_cart', JSON.stringify(items));
 
             this.storageSub.next(JSON.stringify(items));
 
@@ -87,7 +85,7 @@ export class ProductServiceHelper {
 
     }
     protected getProductsFromStorage() {
-        return localStorage.getItem('Kahef_cart') != null ? localStorage.getItem('Kahef_cart') : '';
+        return localStorage.getItem('kahef_cart') != null ? localStorage.getItem('kahef_cart') : '';
     }
     protected getProductsLengthFromStorage() {
         let storage = this.getProductsFromStorage();
@@ -113,10 +111,10 @@ export class ProductServiceHelper {
         if (storage != null && storage != '') {
             items = JSON.parse(storage);
             items.push(id.toString());
-            localStorage.setItem('Kahef_wishlist', JSON.stringify(items));
+            localStorage.setItem('kahef_wishlist', JSON.stringify(items));
             this.storageSub.next(JSON.stringify(storage));
         } else {
-            localStorage.setItem('Kahef_wishlist', JSON.stringify([id.toString()]));
+            localStorage.setItem('kahef_wishlist', JSON.stringify([id.toString()]));
             this.storageSub.next(JSON.stringify(storage));
         }
 
@@ -142,10 +140,10 @@ export class ProductServiceHelper {
             items;
         if (storage != null && storage != '') {
             items = JSON.parse(storage);
-            
+
             items.splice( items.indexOf( id.toString() ), 1 );
 
-            localStorage.setItem('Kahef_wishlist', JSON.stringify(items));
+            localStorage.setItem('kahef_wishlist', JSON.stringify(items));
             this.storageSub.next(JSON.stringify(items));
 
         }
@@ -164,7 +162,7 @@ export class ProductServiceHelper {
             itemsToDelete = this.getWishlistProductsFromStorageById(id);
 
             itemsToDelete.forEach((item: string) => items.splice(items.findIndex((e: string) => e == item), 1));
-            localStorage.setItem('Kahef_wishlist', JSON.stringify(items));
+            localStorage.setItem('kahef_wishlist', JSON.stringify(items));
 
             this.storageSub.next(JSON.stringify(items));
 
@@ -172,13 +170,13 @@ export class ProductServiceHelper {
 
     }
     protected getWishlistProductsFromStorage() {
-        return localStorage.getItem('Kahef_wishlist') != null ? localStorage.getItem('Kahef_wishlist') : '';
+        return localStorage.getItem('kahef_wishlist') != null ? localStorage.getItem('kahef_wishlist') : '';
     }
-    
+
     protected getWishlistProductsLengthFromStorage() {
         let storage = this.getWishlistProductsFromStorage();
         return (storage != null && storage != '') ? JSON.parse(storage).length : 0;
     }
-    
+
 
 }

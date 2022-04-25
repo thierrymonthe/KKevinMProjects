@@ -10,16 +10,18 @@ import { AboutTextComponent } from './about-text/about-text.component';
 import { ProcessComponent } from './process/process.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
+import {ContentComponent} from './content/content.component';
 
 
 @NgModule({
-  declarations: [
-    AboutComponent,
-    AboutTextComponent,
-    ProcessComponent,
-    TestimonialsComponent,
-    BlogPostComponent
-  ],
+    declarations: [
+        AboutComponent,
+        AboutTextComponent,
+        ProcessComponent,
+        TestimonialsComponent,
+        BlogPostComponent,
+        ContentComponent
+    ],
   imports: [
     CommonModule,
     AboutRoutingModule,
